@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <script src="https://kit.fontawesome.com/f1d7a5917a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Nomadic Adventures</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script src="https://kit.fontawesome.com/f1d7a5917a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Nomadic Adventures</title>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation" id="top">
-      <div class="navbar-brand">
-        <div class="logoBurger">
-          <a class="navbar-item" href="#">
-            Nomadic Adcventures
-          </a>
+  <nav class="navbar" role="navigation" aria-label="main navigation" id="top">
+    <div class="navbar-brand">
+      <div class="logoBurger">
+        <a class="navbar-item" href="#"> Nomadic Adcventures </a>
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
-        </div>
-        <div class="navbar-menu" id="navMenu">
-          <!-- navbar-start, navbar-end... -->
-          <div class="navbar-menu">
-            <div class="navbar-start">
-              <!-- navbar items -->
-            </div>
-            <div class="navbar-end">
-              <!-- navbar items -->
-                <a class="navbar-item" id="navbarBtn">
-                  Random Place
-                </a>
-                <a class="navbar-item" id="navbarBtn">
-                  Cheapest Flights
-                </a>
-                <a class="navbar-item" id="navbarBtn" >
-                  Previous Search
-                </a>                                           
-            </div>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <!-- navbar-start, navbar-end... -->
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <!-- navbar items -->
+          </div>
+          <div class="navbar-end">
+            <!-- navbar items -->
+            <a class="navbar-item" id="navbarBtn"> Random Place </a>
+            <a class="navbar-item" id="navbarBtn"> Cheapest Flights </a>
+            <a class="navbar-item" id="navbarBtn" > Previous Search </a>                                           
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
       <!-- HERO -->
       <section class="hero is-large is-info has-text-centered">
@@ -74,7 +66,6 @@
                 </a>
               </p>  
             </div>
-
 
       <!-- tiles -->
 
@@ -106,6 +97,16 @@
             </div>
         </div>
       </section>
+
+
+      <!-- area where flights will be displayed -->
+            
+      <div class="tile is-ancestor ">
+        <div class="tile is-parent is-8">
+          <div id='flights-container'  class="tile is-child box">
+          </div>
+        </div>
+      </div>
 
 
 
