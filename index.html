@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/f1d7a5917a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Nomadic Adventures</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="top">
+      <div class="navbar-brand">
+        <div class="logoBurger">
+          <a class="navbar-item" href="#">
+            Nomadic Adcventures
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <!-- navbar-start, navbar-end... -->
+          <div class="navbar-menu">
+            <div class="navbar-start">
+              <!-- navbar items -->
+            </div>
+            <div class="navbar-end">
+              <!-- navbar items -->
+                <a class="navbar-item" id="navbarBtn">
+                  Random Place
+                </a>
+                <a class="navbar-item" id="navbarBtn">
+                  Cheapest Flights
+                </a>
+                <a class="navbar-item" id="navbarBtn" >
+                  Previous Search
+                </a>                                           
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+      <!-- HERO -->
+      <section class="hero is-large is-info has-text-centered">
+        <div class="hero-body" style="background-image: url('https://images.pexels.com/photos/692103/pexels-photo-692103.jpeg');   background-size: cover;">
+            <p class="title" id="center-heading">Nomadic Adventures <i class="fa-solid fa-plane" id="header-icon"></i></p>
+
+            <div class="field is-grouped">
+              <!-- departure -->
+              <p class="control is-expanded">
+                <i class="fa-solid fa-plane-departure"></i>
+                <input class="input-box" id="departure" type="text" placeholder="MCO" required>
+              </p>
+              <!-- arrival -->
+              <p class="control is-expanded">
+                 <i class=" fa-solid fa-plane-arrival" ></i>
+                 <input id="arrival" class="input input-box" type="text" placeholder="Search for a City" name="q" id="q" />
+              </p>
+              <!-- date of travel -->
+              <p class="control is-expanded">
+                <i class="fa-solid fa-calendar-days"></i>
+                <input class="input-box" id="departure-date" type="text" placeholder="Departure Date" required>
+              </p>
+              <!-- search btn -->
+              <p class="control">
+                <a class="button is-info search-bar" id="submit">
+                  Search
+                </a>
+              </p>  
+            </div>
+
+
+      <!-- tiles -->
+
+            <div class="tile is-ancestor" id="tile-section">
+              <div id = "random-tile" class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title" id="tile-title">Random place</p>
+                  <p class="subtitle"  id="randomPlace">With some content</p>
+                  <div class="content">
+                  </div>
+                </article>
+              </div>
+              <div id = "cheapest-tile" class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title" id="tile-title">Cheapest flights</p>
+                  <p class="subtitle" id="cheap-tile"><i class="fa-solid fa-plane"></i></p>
+                  <div class="content">
+                  </div>
+                </article>
+              </div>
+              <div id = "previous-tile" class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title" id="tile-title">Previous Search</p>
+                  <p class="subtitle" id="prev-tile">With some content</p>
+                  <div class="content" name="test">
+                  </div>
+                </article>
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="content has-text-centered">
+            <p>
+              <strong>Nomadic Adventures</strong>
+              <p>Contact Us</p>
+            </p>
+            <div class="columns has-text-centered">
+              <div class="column">nomadicadventures@travel.com</div>
+              <div class="column"><a href="">Github</a></div>
+              <div class="column">(333)-333-3333</div>
+            </div>
+            <a href="#top"><h3 style="text-decoration: underline;">^ Back to Top ^</h3></a>
+            <p>&copy 2022 Boolean Hooligans</p>
+          </div>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="./assets/js/second.js"></script>
+    <script src="./assets/js/countryList.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
