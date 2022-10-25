@@ -22,16 +22,16 @@ previousTileEl.on('click', function (event) {
 });
 
 // allows user to submit random location
-var submitRandomLocation = function (randomLocation) {
+// var submitRandomLocation = function (randomLocation) {
 
-	if (randomLocation) {
-	  window.location.href = `./second.html?search=${randomLocation}`
-	   getLocation(randomLocation, desiredDeparture);
-	} else {
-	   //   ask user to enter a valid city or location
-	   alert("please enter a valid location")
-	}
-  }
+// 	if (randomLocation) {
+// 	  window.location.href = `./second.html?search=${randomLocation}`
+// 	   getLocation(randomLocation, desiredDeparture);
+// 	} else {
+// 	   //   ask user to enter a valid city or location
+// 	   alert("please enter a valid location")
+// 	}
+//   }
 
 // assign input variables
 var departureInput = document.querySelector("#departure");
@@ -82,14 +82,14 @@ var submitPrevLocation = function () {
 	} 
   };
 
-// Random Country
-let randomPlaceElement = document.getElementById("randomPlace")
-let randomIndex = Math.floor(Math.random() * countryList.length)
-let randomCountry = countryList[randomIndex]
-let randomCountry2 = countryList2[randomIndex]
-// console.log(randomCountry)
+// // Random Country
+// let randomPlaceElement = document.getElementById("randomPlace")
+// let randomIndex = Math.floor(Math.random() * countryList.length)
+// let randomCountry = countryList[randomIndex]
+// let randomCountry2 = countryList2[randomIndex]
+// // console.log(randomCountry)
 
-$("#randomPlace").text(randomCountry2)
+// $("#randomPlace").text(randomCountry2)
 
 // Cheapest Flights
 var cheapestFlights = function() {
